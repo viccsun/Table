@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>Automatic Column Hiding using CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+</head>
+<body>
+<style>
+	body {font-family: calibri;color:#4e7480;}
+	.tutorial-table {
+	    border: #e1e0e0 1px solid;
+	}
+	.tutorial-table th {
+	    text-align: left;
+	    background: #f0F0F0;
+	    padding: 10px;
+	}
+	.tutorial-table td {
+	    border-bottom: #e1e0e0 1px solid;
+	    padding: 10px;
+	}
+	
+	@media screen and (max-width: 900px) and (min-width: 550px) {
+		.priority-5{
+			display:none;
+		}
+	}
+	
+	@media screen and (max-width: 550px) {
+		.priority-5{
+			display:none;
+		}
+		.priority-4{
+			display:none;
+		}
+	}
+	
+	@media screen and (max-width: 300px) {
+		.priority-5{
+			display:none;
+		}
+		.priority-4{
+			display:none;
+		}
+		.priority-3{
+			display:none;
+		}
+		.priority-2{
+			display:none;
+		}
+	
+	}
+	</style>
+<div class="container">
+	<table id="contact-detail" class="tutorial-table" cellspacing="0" width="100%">
+	<thead>
+		<tr>
+			<th class="priority-1" width="15%">First Name</th>
+			<th class="priority-2" width="15%">Last Name</th>
+			<th class="priority-3" width="15%">Address</th>
+			<th class="priority-4" width="10%">Phone</th>
+			<th class="priority-5" width="15%">DOB</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="priority-1">Barry</td>
+			<td class="priority-2">Allen</td>
+			<td class="priority-3">Florida</td>
+			<td class="priority-4">2211335566</td>
+			<td class="priority-5">02-02-1983</td>
+		</tr>
+		<tr>
+			<td class="priority-1">Bruce</td>
+			<td class="priority-2">Banner</td>
+			<td class="priority-3">Newyork</td>
+			<td class="priority-4">7788995566</td>
+			<td class="priority-5">14-04-1987</td>
+		</tr>		
+		<tr>				
+			<td class="priority-1">Bruce</td>
+			<td class="priority-2">Wayne</td>
+			<td class="priority-3">Gotham</td>
+			<td class="priority-4">8877887744</td>
+			<td class="priority-5">15-11-1991</td>
+		</tr>		
+		<tr>
+			<td class="priority-1">Catherine</td>
+			<td class="priority-2">Halsey</td>
+			<td class="priority-3">Olympia</td>
+			<td class="priority-4">8990453211</td>
+			<td class="priority-5">02-02-1990</td>
+		</tr>
+			<tr>
+			<td class="priority-1">Dominique</td>
+			<td class="priority-2">Francon</td>
+			<td class="priority-3">Gotham</td>
+			<td class="priority-4">9890124418</td>
+			<td class="priority-5">01-01-2011</td>
+        </tr>
+		<tr>
+			<td class="priority-1">Ellsworth</td>
+			<td class="priority-2">Toohey</td>
+			<td class="priority-3">Texas</td>
+			<td class="priority-4">7678123331</td>
+			<td class="priority-5">01-10-1990</td>
+		</tr>
+		<tr>
+			<td class="priority-1">Harvy</td>
+			<td class="priority-2">Dent</td>
+			<td class="priority-3">Newyork</td>
+			<td class="priority-4">9988774445</td>
+			<td class="priority-5">01-10-1990</td>		
+		</tr>
+		
+		<tr>
+			<td class="priority-1">Howard</td>
+			<td class="priority-2">Roark</td>
+			<td class="priority-3">Newyork</td>
+			<td class="priority-4">8745554413</td>
+			<td class="priority-5">15-11-2011</td>
+		</tr>
+		<tr>
+			<td class="priority-1">John</td>
+			<td class="priority-2">Mclane</td>
+			<td class="priority-3">orlando</td>
+			<td class="priority-4">7744114411</td>
+			<td class="priority-5">15-11-2000</td>
+		</tr>
+		<tr>		
+			<td class="priority-1">Nick</td>
+			<td class="priority-2">Fury</td>
+			<td class="priority-3">Olympia</td>
+			<td class="priority-4">9966554488</td>
+			<td class="priority-5">25-01-1980</td>
+		</tr>
+		<tr>
+			<td class="priority-1">Peter</td>
+			<td class="priority-2">Parker</td>
+			<td class="priority-3">Queens</td>
+			<td class="priority-4">4455664455</td>
+			<td class="priority-5">10-04-1990</td>
+		</tr>
+		<tr>
+			<td class="priority-1">Peter</td>
+			<td class="priority-2">Keating</td>
+			<td class="priority-3">Texas</td>
+			<td class="priority-4">9089094445</td>
+			<td class="priority-5">15-11-2013</td>
+		</tr>
+		<tr>
+			<td class="priority-1">Tony</td>
+			<td class="priority-2">Stark</td>
+			<td class="priority-3">Texas</td>
+			<td class="priority-4">8899886655</td>
+			<td class="priority-5">05-10-1984</td>
+		</tr>
+	</tbody>
+</table>
+	</div>
+</html>
